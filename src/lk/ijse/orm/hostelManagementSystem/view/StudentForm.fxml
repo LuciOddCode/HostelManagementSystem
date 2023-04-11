@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneLogin" prefHeight="768.0" prefWidth="1366.0" styleClass="whiteBackground" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.hostelManagementSystem.controller.StudentFormController">
+    <children>
+        <Pane layoutX="1.0" layoutY="-3.0" prefHeight="772.0" prefWidth="1496.0">
+         <children>
+            <Label layoutX="458.0" layoutY="42.0" text="Student Management" textAlignment="CENTER" textFill="#0059ff">
+               <font>
+                  <Font name="Lucida Console" size="56.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="170.0" text="SID :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="235.0" text="Contact :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="304.0" text="University :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="705.0" layoutY="293.0" text="Address :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="367.0" text="Parent/Guardian :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSID" layoutX="385.0" layoutY="167.0" onAction="#sidOnAction" prefHeight="40.0" prefWidth="265.0" />
+            <TextField fx:id="txtContact" layoutX="385.0" layoutY="230.0" prefHeight="40.0" prefWidth="265.0" />
+            <TextField fx:id="txtUniversity" layoutX="384.0" layoutY="297.0" prefHeight="40.0" prefWidth="265.0" />
+            <TextField fx:id="txtAddress" layoutX="999.0" layoutY="290.0" prefHeight="40.0" prefWidth="265.0" />
+            <TextField fx:id="txtParent" layoutX="385.0" layoutY="361.0" prefHeight="40.0" prefWidth="265.0" />
+            <Label layoutX="705.0" layoutY="166.0" text="Name :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="998.0" layoutY="163.0" onAction="#nameOnAction" prefHeight="40.0" prefWidth="265.0" />
+            <Label layoutX="706.0" layoutY="229.0" text="DOB :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="705.0" layoutY="358.0" text="Emergancy contact :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmgCon" layoutX="1000.0" layoutY="352.0" prefHeight="40.0" prefWidth="265.0" />
+            <Button fx:id="btnSave" layoutX="1334.0" layoutY="162.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="40.0" prefWidth="111.0" text="Save">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClear" layoutX="1335.0" layoutY="254.0" mnemonicParsing="false" onAction="#clearOnaction" prefHeight="44.0" prefWidth="111.0" text="Clear">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearch" layoutX="1335.0" layoutY="352.0" mnemonicParsing="false" onAction="#SearchOnAction" prefHeight="44.0" prefWidth="111.0" text="Search">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tblStudent" layoutX="90.0" layoutY="440.0" prefHeight="284.0" prefWidth="1360.0">
+              <columns>
+                <TableColumn fx:id="colSID" prefWidth="150.0" text="SID" />
+                <TableColumn fx:id="colName" minWidth="0.0" prefWidth="158.0" text="Name" />
+                  <TableColumn fx:id="colDOB" minWidth="0.0" prefWidth="111.0" text="DOB" />
+                  <TableColumn fx:id="colUni" minWidth="0.0" prefWidth="219.0" text="Uviversity" />
+                  <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="199.0" text="Address" />
+                  <TableColumn fx:id="colParent" minWidth="0.0" prefWidth="189.0" text="Parent" />
+                  <TableColumn fx:id="colEmgCon" minWidth="0.0" prefWidth="173.0" text="Emergancy con:" />
+                  <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="160.0" text="contact" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="dpDOB" layoutX="1000.0" layoutY="221.0" prefHeight="40.0" prefWidth="258.0" />
+         </children></Pane>
+      <ImageView fx:id="btnBack" fitHeight="80.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/img/logos/D24_logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
