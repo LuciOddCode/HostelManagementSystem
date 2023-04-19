@@ -5,5 +5,7 @@ import org.hibernate.annotations.Entity;
 
 @Entity
 public class Student {
+    String SID;
+
 
 }

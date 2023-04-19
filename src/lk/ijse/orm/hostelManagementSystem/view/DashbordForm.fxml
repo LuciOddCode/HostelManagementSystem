@@ -19,7 +19,7 @@
             <Button fx:id="btnRoomManagement" layoutX="642.0" layoutY="310.0" mnemonicParsing="false" onAction="#roomManagementOnAction" prefHeight="125.0" prefWidth="250.0" text="Room Management" />
             <Button fx:id="btnStudent" layoutX="238.0" layoutY="310.0" mnemonicParsing="false" onAction="#studentManagementOnAction" prefHeight="125.0" prefWidth="250.0" text="Student Management" />
             </children></Pane>
-      <ImageView fitHeight="80.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnBack" fitHeight="80.0" fitWidth="88.0" onMouseClicked="#goBackOnMouseClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/img/logos/D24_logo.png" />
          </image>

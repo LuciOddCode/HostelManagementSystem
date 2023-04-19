@@ -31,6 +31,7 @@ public class StudentFormController {
     public ImageView btnBack;
 
     public void saveOnAction(ActionEvent actionEvent) {
+       /* SuperBO student =(StudentBO);*/
     }
 
     public void clearOnaction(ActionEvent actionEvent) {

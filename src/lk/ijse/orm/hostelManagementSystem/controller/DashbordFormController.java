@@ -2,6 +2,8 @@ package lk.ijse.orm.hostelManagementSystem.controller;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class DashbordFormController {
@@ -9,6 +11,7 @@ public class DashbordFormController {
     public Button btnReservation;
     public Button btnRoomManagement;
     public Button btnStudent;
+    public ImageView btnBack;
 
     public void reservationManagementOnAction(ActionEvent actionEvent) {
     }
@@ -17,5 +20,8 @@ public class DashbordFormController {
     }
 
     public void studentManagementOnAction(ActionEvent actionEvent) {
+    }
+
+    public void goBackOnMouseClick(MouseEvent mouseEvent) {
     }
 }
